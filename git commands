@@ -1,0 +1,69 @@
+GIT COMMANDS:
+
+
+commands to upload project 1st time into the Git:
+
+cd /path/to/your/project
+git init
+
+
+git add .
+
+
+git commit -m "Initial commit"
+
+
+ Create a New Repository on GitHub (or Another Git Hosting Platform)
+
+
+git remote add origin <repository-url>
+
+
+git branch -M main
+git push -u origin main
+
+
+If error occurs follow below command again:
+
+
+git pull origin main --rebase
+
+
+git rebase --continue
+
+
+git push -u origin main
+
+
+2nd commands to follow if you want to pull the code from remote directory:
+
+
+Assuming the branch already exists remotely:
+
+Switch to the Branch You Want:
+
+git checkout <branch-name>
+
+Pull the Latest Changes:
+
+git pull origin <branch-name>
+
+If the branch doesn’t exist locally, create it and set it to track the remote branch:
+
+git checkout -b <branch-name> 
+
+
+git branch
+
+
+git add .
+
+
+git status
+
+
+git commit -m "Your commit message"
+
+
+git push origin cal(branch-name)
+
